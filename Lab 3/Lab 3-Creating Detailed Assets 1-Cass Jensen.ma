@@ -1,29 +1,28 @@
 //Maya ASCII 2025ff03 scene
 //Name: Lab 3-Creating Detailed Assets 1-Cass Jensen.ma
-//Last modified: Wed, Sep 11, 2024 06:51:42 PM
+//Last modified: Fri, Sep 13, 2024 05:58:17 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
 		 "LookdevXMaya" "1.5.0";
 requires -nodeType "aiOptions" -nodeType "aiImagerDenoiserOidn" "mtoa" "5.4.2.1";
-requires -nodeType "polyBoolean" "polyBoolean" "1.1";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "79C6447A-4A93-A8B8-73B7-BEB1DF8CF06C";
+fileInfo "UUID" "03FB9874-4014-E8A9-B50A-ABB98E804D7F";
 createNode transform -s -n "persp";
 	rename -uid "83E643E8-492E-8DBF-4079-07B76E5B5562";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.9447586086574251 13.47447751389074 20.447012901752238 ;
-	setAttr ".r" -type "double3" -24.338352729643997 -352.59999999994028 0 ;
+	setAttr ".t" -type "double3" 17.801205378058434 6.9062654107694037 13.11346023338559 ;
+	setAttr ".r" -type "double3" 347.6616472706686 -1386.9999999998654 1.3212343324428166e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "920668E3-472F-5051-65EE-52AE9C03240A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 27.051479310397323;
+	setAttr ".coi" 27.138880359111056;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -117,157 +116,6 @@ createNode materialxStack -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorne
 		+ "        \"name\": \"document12\"\n    },\n    {\n        \"document\": \"AAAB0XicdZHdCoJAEIXvfYphrsWf1Ejwh6DLKOgFZHJXEnSVXY16+0zbUKm7PTO7c/Y7E6WPuoI7l6psRIyu5WCaGFFNHZclVY95y9thYgBEqiPBSLJM9bKgnIOgmse4LrsI3bN9NyatbsS4RBAN44wXMe4vp/PxkJ0O2frp6DM4laLtu8/4Kyme5U3VSD13FB7Cnap+kI4VhKEfeCY4lh9sw01gwsDju36IYI8/t9dGE8901swaZ1n90ujCDORNsLz9C2AVw99s/qapGZZWw7bs77oS4wWfeZvc\",\n        \"name\": \"document13\"\n    },\n    {\n        \"document\": \"AAAB0XicdZHbDoIwDIbveYqm14aDwyAJYEy4NJr4AqS6EUlgmA2Ivr0cnBGid+3frX+/Nto9qhI6oXRRyxg928VdYkUVNUIVVD6+S2yLiQUQ6YYkJ8Uz3aqcrgIkVSLGpewhNM/7UJhyfSMuFIKsueAij3F/Pp4OaXZMs+XX0ad3KuS9bd7tL6RFdq3LWpm+Y8IQOirbPnXtTeD5wQpc22csCNkQhcwPwjWCM07uLI0mnik2zAZnrn5ojPAFMhDMX/8CWKzh727+btMwzK36azmfcyXWC6B3m94=\",\n        \"name\": \"document14\"\n    },\n    {\n        \"document\": \"AAAB0nicdZHdCoJAEIXvfYphrsN/Q0GNwMso6AVkalcSdI1dFXv7TNtIqbuZM7tz5puJd0NdQc+lKhuRoGPauEuNuKaWy5Kq4bvkhZgaALFqSTCSLFedLOjKQVDNE1zLDkL7uL8Kc65uxLhEEA3jjBcJ7s/H0yHLj1m+/jr5jE6luHftu/2FFM+vTdVI3XdKPISeqm5MbTMIQzd0N2Cbvh/43hRF0dYOIgRrGt1aO81Ac6yhNc9S/eBo4YvkhbB8/YtgtYe/y/m7Ts2wtBrPZX3ulRpPHSucFA==\",\n"
 		+ "        \"name\": \"document15\"\n    },\n    {\n        \"document\": \"AAAB0nicdZHbCoJAEIbvfYphrkNXTFLwQNBlGPQCMrUbCbrKrka9fR5aSam7mX92559vJkqfVQkPoXRRyxhdm2GaWFFFrVAFlc/vkhdgYgFEuiXJSfFcd+pGVwGSKhHjWnYR2lczFKZc34kLhSBrLri4xbg/Z6fjIc8O+frr6NM7FbLp2k/7C2mRX+uyVqbvmHgIDyq7PmW2HzDG3A0we+uFfugPUbjb+ixAcMbRnbXTBDTFBtrwLNUZxwhfJAPC8vUvgtUe/i7n7zoNw9KqP5cz3yux3hHwnAk=\",\n        \"name\": \"document16\"\n    },\n    {\n        \"document\": \"AAAB0XicdZHLCsIwEEX3/Yph1mITo+iirQguRcEfKKMZsdCmkrSif28fRmzR3TySuffMROtHkcOdrctKE6OcClwnQVRQxTaj/PHdUitMAoDIVWQ0WZ262l7ozGCo4BjHZYlQPW9to8/dlTRbBFNq1nyJcXPcH3bbdL9Nx187nUYpM7e6eo8/keP0XOal9XO7RCHcKa+5NTiXSsgJiMbpQsxVG0m1nIkFQtg5D8dCPU8fe2aPM6x+aHzhC6QlGL7+BTBaw9/d/N2mZxhKNdcKP+dKghd9s5u6\",\n        \"name\": \"document17\"\n    },\n    {\n        \"document\": \"AAAB0nicdZHbCsIwDIbv9xQh17K17IDCNhG8lAm+wIi24mDrpN1kvr07WHFD75I/bf58SbztqhIeUpuiVglyl+E2deKKGqkLKrvvkr/G1AGITUNKkBa5afWVLhIUVTLBpcwRmud9KEy5uZGQGkHVQgp5TXB3yo6HfZ7t8+XX0ad3KtS9bd7tz2RkfqnLWtu+Y+IjPKhs+5S56zBiLFoBc4Mw4JwPEffZhkcI3ji6t3SagKbYQlueufrBscIXyYAwf/2LYLGHv8v5u07LMLfqz+V97pU6L/5mm/Q=\",\n"
 		+ "        \"name\": \"document18\"\n    },\n    {\n        \"document\": \"AAAB0XicdZHbCoJAEIbvfYphrsNjaIEHgi6joBeQyd1I0DV2Nert89CKSt7N/LM7/3wzYfIuC3hxqfJKROiYNiaxEZZUc5lT8Z6WvB3GBkCoahKMJEtVI++UcRBU8giXsoNQf55dYcjVgxiXCKJinPF7hIfr+XI6pudjuvza+7ROuXg29a/9jRRPs6qopO7bJx7Ci4qmTW3Tt/e+723ANp2d5wZd4AaB428RrH5ya2k08AyxZtY4c3Wk0cIEpCOYv/4HsFjD6m5Wt6kZ5lbttazxXLHxBZgym9U=\",\n        \"name\": \"document19\"\n    }\n]\n");
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2";
-	rename -uid "427681CD-4020-1879-6DC2-6788EDB98B5F";
-	setAttr ".ovrgbf" yes;
-	setAttr ".ovrgb" -type "float3" 0.74117649 0.74117649 0.74117649 ;
-	setAttr ".t" -type "double3" 0 -1.0159874891291221 0 ;
-	setAttr ".rp" -type "double3" 0.86044116179507046 3.8678453336216032 -0.040104517944250073 ;
-	setAttr ".sp" -type "double3" 0.86044116179507046 3.8678453336216032 -0.040104517944250073 ;
-createNode transform -n "polySurface10" -p "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2";
-	rename -uid "6DFD0DD2-46EC-523C-CE86-6384BEBA78D6";
-createNode mesh -n "polySurfaceShape10" -p "polySurface10";
-	rename -uid "8637962B-4B9B-4CDB-9C92-939A4D21DB09";
-	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "polySurface12" -p "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2";
-	rename -uid "7F808C05-48F3-23B7-22DA-0694A774FE67";
-createNode mesh -n "polySurfaceShape12" -p "polySurface12";
-	rename -uid "11FC20B3-4B20-4C2E-DD56-FFA5F22E679C";
-	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "transform1" -p "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2";
-	rename -uid "DBD6052A-4B74-5138-ABB1-3A84B289824B";
-	setAttr ".v" no;
-createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape" 
-		-p "transform1";
-	rename -uid "5038230E-45CC-4067-C56C-5CA5FD8848B6";
-	setAttr -k off ".v";
-	setAttr ".io" yes;
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 1 "f[0:23]";
-	setAttr ".ovs" no;
-	setAttr ".ove" yes;
-	setAttr ".ovrgbf" yes;
-	setAttr ".ovrgb" -type "float3" 0.89969999 0.1575 0.1946 ;
-	setAttr ".ovca" 0.30000001192092896;
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".vis" no;
-	setAttr -s 7 ".gtag";
-	setAttr ".gtag[0].gtagnm" -type "string" "back";
-	setAttr ".gtag[0].gtagcmp" -type "componentList" 4 "f[2]" "f[8]" "f[10]" "f[20]";
-	setAttr ".gtag[1].gtagnm" -type "string" "booleanIntersection";
-	setAttr ".gtag[1].gtagcmp" -type "componentList" 5 "e[13:14]" "e[20:21]" "e[24:28]" "e[34]" "e[37:38]";
-	setAttr ".gtag[2].gtagnm" -type "string" "bottom";
-	setAttr ".gtag[2].gtagcmp" -type "componentList" 4 "f[3]" "f[6]" "f[13]" "f[21]";
-	setAttr ".gtag[3].gtagnm" -type "string" "front";
-	setAttr ".gtag[3].gtagcmp" -type "componentList" 4 "f[0]" "f[14]" "f[16]" "f[18]";
-	setAttr ".gtag[4].gtagnm" -type "string" "left";
-	setAttr ".gtag[4].gtagcmp" -type "componentList" 4 "f[5]" "f[9]" "f[11]" "f[23]";
-	setAttr ".gtag[5].gtagnm" -type "string" "right";
-	setAttr ".gtag[5].gtagcmp" -type "componentList" 4 "f[4]" "f[15]" "f[17]" "f[22]";
-	setAttr ".gtag[6].gtagnm" -type "string" "top";
-	setAttr ".gtag[6].gtagcmp" -type "componentList" 4 "f[1]" "f[7]" "f[12]" "f[19]";
-	setAttr ".pv" -type "double2" 0.25 0.375 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 62 ".uvst[0].uvsp[0:61]" -type "float2" 0.375 0 0.625 0 0.375
-		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
-		 0.875 0.25 0.125 0 0.125 0.25 0.375 0.75 0.44477677 0.79158485 0.44477677 0.87973225
-		 0.61884719 0.87973225 0.625 1 0.375 1 0.375 0.25 0.625 0.25 0.61884707 0.37026778
-		 0.44477677 0.37026775 0.44477677 0.45841512 0.375 0.5 0.375 0.5 0.375 0.75 0.625
-		 0.75 0.625 0.5 0.125 0 0.125 0.25 0.375 0.25 0.375 0 0.625 0.5 0.625 0.75 0.125 0
-		 0.375 0 0.125 0.25 0.61884713 0.45841512 0.61884713 0.79158491 0.625 0.25 0.625 0
-		 0.875 0.25 0.875 0 0.625 0 0.875 0 0.875 0.25 0.375 0 0.625 0 0.625 0.25 0.375 0.25
-		 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0 0.875 0.25 0.125
-		 0 0.125 0.25;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".pt[20]" -type "float3"  0 0 -1.1920929e-07;
-	setAttr -s 32 ".vt[0:31]"  -2.10151768 0.86000156 3.00094199181 3.91848421 0.86000156 3.00094199181
-		 -2.10151768 1.01482439 3.00094199181 3.91848421 1.01482439 3.00094199181 -2.10151768 1.01482439 -3.019059896
-		 3.91848421 1.01482439 -3.019059896 -2.10151768 0.86000156 -3.019059896 3.91848421 0.86000156 -3.019059896
-		 3.89854527 6.88491631 -3.08115077 2.89718103 5.20469093 -3.08115077 0.77459198 5.20469093 -3.08115077
-		 0.77459198 1.013075829 -3.08115077 -2.12145662 0.86491448 -3.08115077 -2.12145662 6.88491631 -3.08115077
-		 -2.12145662 6.88491631 -2.92632794 -2.12145662 0.86491448 -2.92632794 0.77459198 1.013075829 -2.92632794
-		 0.77459198 5.20469093 -2.92632794 2.89718103 5.20469093 -2.92632794 3.89854527 6.88491631 -2.92632794
-		 2.89718103 1.013075829 -3.081151009 2.89718103 1.013075829 -2.92632794 3.89854527 0.86491448 -2.92632794
-		 3.89854527 0.86491448 -3.08115077 -2.1976018 6.8707757 3.00094199181 -2.1976018 0.85077417 3.00094199181
-		 -2.042778969 6.8707757 3.00094199181 -2.042778969 0.85077417 3.00094199181 -2.042778969 6.8707757 -3.019059896
-		 -2.042778969 0.85077417 -3.019059896 -2.1976018 6.8707757 -3.019059896 -2.1976018 0.85077417 -3.019059896;
-	setAttr -s 52 ".ed[0:51]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
-		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0 8 9 1 9 10 0 10 11 0 11 12 1 12 13 0 13 8 0 14 15 0
-		 15 16 1 16 17 0 17 18 0 18 19 1 19 14 0 18 9 0 9 20 0 20 21 0 21 18 0 17 10 0 19 22 0
-		 22 23 0 23 8 0 8 19 0 13 14 0 21 16 0 15 22 0 23 12 0 11 20 0 16 11 0 12 15 0 24 25 0
-		 26 27 0 28 29 0 30 31 0 24 26 0 25 27 0 26 28 0 27 29 0 28 30 0 29 31 0 30 24 0 31 25 0;
-	setAttr -s 24 -ch 104 ".fc[0:23]" -type "polyFaces" 
-		f 4 0 5 -2 -5
-		mu 0 4 0 1 3 2
-		f 4 1 7 -3 -7
-		mu 0 4 2 3 5 4
-		f 4 2 9 -4 -9
-		mu 0 4 4 5 7 6
-		f 4 3 11 -1 -11
-		mu 0 4 6 7 9 8
-		f 4 -12 -10 -8 -6
-		mu 0 4 1 10 11 3
-		f 4 10 4 6 8
-		mu 0 4 12 0 2 13
-		f 6 12 13 14 15 16 17
-		mu 0 6 14 15 16 17 18 19
-		f 6 18 19 20 21 22 23
-		mu 0 6 20 21 22 23 24 25
-		f 4 24 25 26 27
-		mu 0 4 26 27 28 29
-		f 4 -25 -22 28 -14
-		mu 0 4 30 31 32 33
-		f 4 29 30 31 32
-		mu 0 4 25 34 35 14
-		f 4 -18 33 -24 -33
-		mu 0 4 36 37 20 38
-		f 6 -28 34 -20 35 -30 -23
-		mu 0 6 24 39 22 21 34 25
-		f 6 -32 36 -16 37 -26 -13
-		mu 0 6 14 35 18 17 40 15
-		f 4 -29 -21 38 -15
-		mu 0 4 33 32 41 42
-		f 4 -39 -35 -27 -38
-		mu 0 4 42 41 43 44
-		f 4 -17 39 -19 -34
-		mu 0 4 37 45 21 20
-		f 4 -37 -31 -36 -40
-		mu 0 4 45 46 47 21
-		f 4 40 45 -42 -45
-		mu 0 4 48 49 50 51
-		f 4 41 47 -43 -47
-		mu 0 4 51 50 52 53
-		f 4 42 49 -44 -49
-		mu 0 4 53 52 54 55
-		f 4 43 51 -41 -51
-		mu 0 4 55 54 56 57
-		f 4 -52 -50 -48 -46
-		mu 0 4 49 58 59 50
-		f 4 50 44 46 48
-		mu 0 4 60 48 51 61;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Challenge2_TileFloor_Cass_Jensen:tile_row_1";
 	rename -uid "04ACF857-4BF0-7B86-1DCD-7882DFC9EF4C";
 createNode transform -n "Challenge2_TileFloor_Cass_Jensen:pCube2" -p "Challenge2_TileFloor_Cass_Jensen:tile_row_1";
@@ -5718,31 +5566,11 @@ createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape6" -p "Chal
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:combined_open_hallway";
-	rename -uid "B5EA2919-40D6-3CF8-923C-BB8AF1D62C57";
-	setAttr ".rp" -type "double3" 1.8449322899696019 4.1129876290162857 -2.9850891604127043 ;
-	setAttr ".sp" -type "double3" 1.8449322899696019 4.1129876290162857 -2.9850891604127043 ;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:transform4" -p "Challenge2_TileFloor_Cass_Jensen:combined_open_hallway";
-	rename -uid "36824A22-4CFE-4371-0203-07B622C6DAB8";
-	setAttr ".v" no;
-createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape" 
-		-p "Challenge2_TileFloor_Cass_Jensen:transform4";
-	rename -uid "E6E00CFE-4483-DB7E-3BA2-8EA3FCFE9C06";
-	setAttr -k off ".v";
-	setAttr ".io" yes;
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "floor";
+createNode transform -n "archway_wall";
 	rename -uid "3841E2F3-4542-42F9-52BD-3684F3B5D7E3";
 	setAttr ".rp" -type "double3" 0.86044120788574219 2.8518577814102173 -0.015952467918395996 ;
 	setAttr ".sp" -type "double3" 0.86044120788574219 2.8518577814102173 -0.015952467918395996 ;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface7" -p "floor";
+createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface7" -p "archway_wall";
 	rename -uid "FE9107BF-488D-1097-BAFA-7288023FEF80";
 createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape30" -p "Challenge2_TileFloor_Cass_Jensen:polySurface7";
 	rename -uid "1E6FB00D-43A1-0581-177E-F1B7CD1464E2";
@@ -5755,7 +5583,7 @@ createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape30" -p "Cha
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface8" -p "floor";
+createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface8" -p "archway_wall";
 	rename -uid "2D43C507-4E2C-656A-A41C-2A94364F603E";
 createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape31" -p "Challenge2_TileFloor_Cass_Jensen:polySurface8";
 	rename -uid "A51303B2-45DC-A226-1077-A8B55CD811FC";
@@ -5768,7 +5596,7 @@ createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape31" -p "Cha
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface9" -p "floor";
+createNode transform -n "Challenge2_TileFloor_Cass_Jensen:polySurface9" -p "archway_wall";
 	rename -uid "51216FC9-4C47-14E7-F24F-01B4BB1F363D";
 createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape32" -p "Challenge2_TileFloor_Cass_Jensen:polySurface9";
 	rename -uid "F2828E2F-49B3-E596-C23C-2A8D9FA8059C";
@@ -5781,7 +5609,7 @@ createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape32" -p "Cha
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:transform6" -p "floor";
+createNode transform -n "Challenge2_TileFloor_Cass_Jensen:transform6" -p "archway_wall";
 	rename -uid "DCFA8557-48BA-7EDC-830A-4F897A7A6964";
 	setAttr ".v" no;
 createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurface1Shape" -p "Challenge2_TileFloor_Cass_Jensen:transform6";
@@ -5796,7 +5624,7 @@ createNode mesh -n "Challenge2_TileFloor_Cass_Jensen:polySurface1Shape" -p "Chal
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "polySurface8" -p "floor";
+createNode transform -n "polySurface8" -p "archway_wall";
 	rename -uid "3551CF22-4757-F539-A32B-1B9D1C353D1C";
 createNode mesh -n "polySurfaceShape8" -p "polySurface8";
 	rename -uid "62DC93A2-46B3-7C8B-0845-13BCF814A1A3";
@@ -5849,7 +5677,7 @@ createNode mesh -n "polySurfaceShape8" -p "polySurface8";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "polySurface9" -p "floor";
+createNode transform -n "polySurface9" -p "archway_wall";
 	rename -uid "B8DC53B8-4A8D-1C6E-C25B-A4B24B8E6BDF";
 createNode mesh -n "polySurfaceShape9" -p "polySurface9";
 	rename -uid "57A52DEE-4954-A097-324F-9C89745512AD";
@@ -5902,7 +5730,7 @@ createNode mesh -n "polySurfaceShape9" -p "polySurface9";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "polySurface14" -p "floor";
+createNode transform -n "polySurface14" -p "archway_wall";
 	rename -uid "DCC7F16E-4085-C7B2-40BC-A78596C571E7";
 	setAttr ".t" -type "double3" 1.7284490562430701 -0.087315061201372224 -0.90082331493830625 ;
 	setAttr ".r" -type "double3" 0 -90 0 ;
@@ -5917,42 +5745,12 @@ createNode mesh -n "polySurfaceShape14" -p "polySurface14";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.25 0.1249999962747097 ;
+	setAttr ".pv" -type "double2" 0.375 0.3749999962747097 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 80 ".pt[0:79]" -type "float3"  7.1525574e-07 7.1898103e-07 
-		-1.4305115e-06 7.1525574e-07 7.1525574e-07 -1.3709068e-06 7.1525574e-07 7.1525574e-07 
-		-1.4901161e-06 7.1525574e-07 7.1898103e-07 -1.4454126e-06 7.1525574e-07 4.7683716e-07 
-		-1.6689301e-06 7.1525574e-07 4.7683716e-07 -2.3841858e-06 7.1525574e-07 9.5367432e-07 
-		-1.9073486e-06 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 9.5367432e-07 
-		-1.4305115e-06 7.1525574e-07 9.5367432e-07 -7.1525574e-07 7.1525574e-07 4.7683716e-07 
-		-9.5367432e-07 7.1525574e-07 4.7683716e-07 -1.4305115e-06 7.1525574e-07 9.5367432e-07 
-		-2.1457672e-06 7.1525574e-07 4.7683716e-07 -3.3378601e-06 7.1525574e-07 9.5367432e-07 
-		-1.6689301e-06 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 9.5367432e-07 
-		-2.3841858e-07 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07 
-		-1.4305115e-06 7.1525574e-07 4.7683716e-07 -7.1525574e-07 7.1525574e-07 9.5367432e-07 
-		-1.6689301e-06 7.1525574e-07 4.7683716e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07 
-		-1.1920929e-06 7.1525574e-07 9.5367432e-07 -1.9073486e-06 7.1525574e-07 9.5367432e-07 
-		-4.7683716e-07 7.1525574e-07 9.5367432e-07 -2.1457672e-06 7.1525574e-07 9.5367432e-07 
-		-1.6689301e-06 7.1525574e-07 4.7683716e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07 
-		-4.7683716e-07 7.1525574e-07 9.5367432e-07 -1.1920929e-06 7.1525574e-07 4.7683716e-07 
-		-1.6689301e-06 7.1525574e-07 4.7683716e-07 -3.5762787e-06 7.1525574e-07 4.7683716e-07 
-		-2.3841858e-07 7.1525574e-07 9.5367432e-07 -4.7683716e-07 7.1525574e-07 9.5367432e-07 
-		-1.1920929e-06 7.1525574e-07 9.5367432e-07 -4.7683716e-07 7.1525574e-07 9.5367432e-07 
-		-9.5367432e-07 7.1525574e-07 4.7683716e-07 -1.9073486e-06 0 4.7683716e-07 0 0 0 0 
-		0 2.3841858e-07 2.3841858e-07 0 -2.3841858e-07 -2.3841858e-07 0 -2.3841858e-07 7.1525574e-07 
-		0 2.3841858e-07 -4.7683716e-07 0 0 9.5367432e-07 0 0 -1.4305115e-06 0 0 0 0 0 0 0 
-		0 9.5367432e-07 0 0 9.5367432e-07 0 0 0 0 0 0 0 2.3841858e-07 0 0 2.3841858e-07 4.7683716e-07 
-		0 2.3841858e-07 1.1920929e-06 0 -2.3841858e-07 2.3841858e-06 0 -2.3841858e-07 2.3841858e-06 
-		0 -2.3841858e-07 -9.5367432e-07 0 0 1.4305115e-06 0 0 1.1920929e-06 0 0 -4.7683716e-07 
-		0 0 4.7683716e-07 0 0 0 0 0 0 0 -4.7683716e-07 -4.7683716e-07 0 4.7683716e-07 4.7683716e-07 
-		0 0 0 0 0 4.7683716e-07 0 0 9.5367432e-07 0 0 4.7683716e-07 0 0 -1.4305115e-06 0 
-		0 -9.5367432e-07 0 -4.7683716e-07 0 0 -4.7683716e-07 4.7683716e-07 0 7.1525574e-07 
-		1.9073486e-06 0 -2.3841858e-07 1.4305115e-06 0 7.1525574e-07 1.4305115e-06 0 -2.3841858e-07 
-		-4.7683716e-07 0 2.3841858e-07 -4.7683716e-07 0 -2.3841858e-07 9.5367432e-07;
 createNode mesh -n "polySurfaceShape15" -p "polySurface14";
 	rename -uid "2D5272AB-4E57-256E-7DDA-72A3197DCB52";
 	setAttr -k off ".v";
@@ -6008,22 +5806,6 @@ createNode mesh -n "polySurfaceShape15" -p "polySurface14";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:directionalLight1";
-	rename -uid "2BB32E70-4B47-B5CD-A534-1B969962CECF";
-	setAttr ".t" -type "double3" -1.5373277661503295 5.8683648579706844 4.5137616901633759 ;
-	setAttr ".r" -type "double3" -19.3717656115398 -24.595989850042155 -15.172712898794941 ;
-createNode directionalLight -n "Challenge2_TileFloor_Cass_Jensen:directionalLightShape1" 
-		-p "Challenge2_TileFloor_Cass_Jensen:directionalLight1";
-	rename -uid "34174521-498B-DE55-821F-CDAA9490ACD9";
-	setAttr -k off ".v";
-createNode transform -n "Challenge2_TileFloor_Cass_Jensen:directionalLight2";
-	rename -uid "F586DEFF-4098-5262-EF34-4C85BD391D08";
-	setAttr ".t" -type "double3" 6.5434527261954587 1.3743084995497525 0.17191803913928763 ;
-	setAttr ".r" -type "double3" -146.42788787015346 137.65199929637208 -184.90707074296725 ;
-createNode directionalLight -n "Challenge2_TileFloor_Cass_Jensen:directionalLightShape2" 
-		-p "Challenge2_TileFloor_Cass_Jensen:directionalLight2";
-	rename -uid "BE86D39C-4F39-620F-50B3-0CB26A634723";
-	setAttr -k off ".v";
 createNode transform -n "group";
 	rename -uid "162F520D-431F-BC7D-CC72-7E94BABDA562";
 	setAttr ".rp" -type "double3" 0.14331943704408534 3.3826468576878819 -1.2954724822524355 ;
@@ -6115,7 +5897,6 @@ createNode mesh -n "Lab2WhiteboxBlocking_Cass_Jensen:polySurfaceShape1" -p "Lab2
 	rename -uid "63DB8F7A-45E6-0A53-7AED-07B8D2038A19";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -6129,9 +5910,6 @@ createNode mesh -n "Lab2WhiteboxBlocking_Cass_Jensen:polySurfaceShape1" -p "Lab2
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Lab2WhiteboxBlocking_Cass_Jensen:PORTRAIT" -p "group";
 	rename -uid "09F7445F-45B9-695D-C43D-FE99A9657E51";
 	setAttr ".t" -type "double3" -3.7114541963175038 5.3265982034091426 0.76146444526913148 ;
@@ -7183,20 +6961,20 @@ createNode mesh -n "Lab2WhiteboxBlocking_Cass_Jensen:pCube2Shape" -p "Lab2Whiteb
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "20CFA8FD-49AE-8917-6D6A-44870A1BF06B";
+	rename -uid "56C0BCD8-4A17-2CE1-C585-5F838CD6C738";
 	setAttr -s 36 ".lnk";
 	setAttr -s 36 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "30043AC0-45EF-16C2-3B48-A9A4CA0F1035";
+	rename -uid "26DF9317-4066-CA48-D915-35AD53F8FF75";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3CC06144-4647-356F-E8A9-E69D270FC98C";
+	rename -uid "E5CFC1EF-405E-F0EF-9652-9C870D924AFE";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C169918B-4B67-618F-D014-A2844978D771";
+	rename -uid "618A9A85-483C-4E68-DF15-BDA2A5F2EC73";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3F3391AB-40FC-9C4D-5EC6-1CB908ACAAD1";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9946F83C-4AB6-B45A-4BF0-B1BDA0199CC4";
+	rename -uid "13986E20-494F-7D0D-67FC-668CBC700754";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B7B05F01-48A1-C835-B6F4-57A373816165";
 	setAttr ".g" yes;
@@ -7216,7 +6994,7 @@ createNode script -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_J
 		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1032\n            -height 523\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1036\n            -height 523\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 0\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
 		+ "            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 0\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 0\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
@@ -7239,8 +7017,8 @@ createNode script -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_J
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap true\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1032\\n    -height 523\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1032\\n    -height 523\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1036\\n    -height 523\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1036\\n    -height 523\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 4 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:sceneConfigurationScriptNode";
@@ -7387,9 +7165,9 @@ createNode lambert -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_
 createNode shadingEngine -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG";
 	rename -uid "B80B76F3-45F1-3589-7D7D-5691BECEC81B";
 	setAttr ".ihi" 0;
-	setAttr -s 11 ".dsm";
+	setAttr -s 6 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 11 ".gn";
+	setAttr -s 7 ".gn";
 createNode materialInfo -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:materialInfo20";
 	rename -uid "E3B72975-4212-C819-1488-D085B24E1766";
 createNode nodeGraphEditorInfo -n "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:hyperShadePrimaryNodeEditorSavedTabsInfo";
@@ -8042,13 +7820,8 @@ createNode groupParts -n "Challenge2_TileFloor_Cass_Jensen:groupParts5";
 	rename -uid "4C6B239E-47CE-9234-C2B5-2EB8A839DF11";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 2 "f[0:14]" "f[16:25]";
-createNode groupId -n "Challenge2_TileFloor_Cass_Jensen:groupId38";
-	rename -uid "81BF8EE7-4D8D-B385-E2B9-49AE131657D0";
-	setAttr ".ihi" 0;
 createNode polyUnite -n "Challenge2_TileFloor_Cass_Jensen:polyUnite2";
 	rename -uid "6879B984-43FA-2379-C349-8F8F61BE7DA6";
-	setAttr -s 2 ".ip";
-	setAttr -s 2 ".im";
 createNode groupId -n "Challenge2_TileFloor_Cass_Jensen:groupId43";
 	rename -uid "6BF37961-4A00-C7FF-DF49-E18F81AD2527";
 	setAttr ".ihi" 0;
@@ -8184,41 +7957,9 @@ createNode polyBevel3 -n "Challenge2_TileFloor_Cass_Jensen:polyBevel16";
 createNode groupId -n "groupId1";
 	rename -uid "8B57FF05-4BB9-D6E0-CC6E-EAB986A0720A";
 	setAttr ".ihi" 0;
-createNode polyBoolean -n "Challenge2_TileFloor_Cass_Jensen:polyBoolean1";
-	rename -uid "95286834-48EA-1D97-C82B-C48B91700E4D";
-	setAttr ".op" -type "Int32Array" 2 4 4 ;
-	setAttr ".ee" -type "Int32Array" 2 1 1 ;
-	setAttr ".mg" -type "Int32Array" 2 -136 -134 ;
-createNode groupId -n "Challenge2_TileFloor_Cass_Jensen:groupId42";
-	rename -uid "79AD80EF-445E-A8C3-7D8D-DAA16D02CC94";
-	setAttr ".ihi" 0;
-createNode groupId -n "Challenge2_TileFloor_Cass_Jensen:groupId41";
-	rename -uid "20884BA6-484B-FEB3-356F-6998D7B4C4CB";
-	setAttr ".ihi" 0;
-createNode groupId -n "Challenge2_TileFloor_Cass_Jensen:groupId40";
-	rename -uid "CF8C6AC3-40BE-933E-98E1-8BB5C3A003A5";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId2";
 	rename -uid "BE0F1AEE-401A-9633-2656-36AB0AB7BC51";
 	setAttr ".ihi" 0;
-createNode polySeparate -n "polySeparate1";
-	rename -uid "9326205D-4F1F-E458-55E5-F19AC965F8EA";
-	setAttr ".ic" 3;
-	setAttr -s 2 ".out";
-createNode groupId -n "groupId3";
-	rename -uid "9B68F9AC-4B99-D25F-D456-A8BC842717B3";
-	setAttr ".ihi" 0;
-createNode groupParts -n "groupParts1";
-	rename -uid "AB5FFB44-454A-FCB7-BE34-138751DD8EC6";
-	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 6 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]";
-createNode groupId -n "groupId5";
-	rename -uid "F607ED18-400C-0FC9-2565-1EBA3201CEDA";
-	setAttr ".ihi" 0;
-createNode groupParts -n "groupParts3";
-	rename -uid "36BA48A5-46BB-A74D-3B10-7786968A602D";
-	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 6 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]";
 createNode groupParts -n "Lab2WhiteboxBlocking_Cass_Jensen:groupParts18";
 	rename -uid "BC82F4C1-4733-A549-4EDC-FEB9C9A1D692";
 	setAttr ".ihi" 0;
@@ -8612,6 +8353,120 @@ createNode polyExtrudeFace -n "polyExtrudeFace1";
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 0.86091362038047303 -0.12149304563486532 -3.0984243948791024 ;
 	setAttr ".cbx" -type "double3" 2.8359665305970245 3.809692323452138 -2.9436015684936043 ;
+createNode polyTweak -n "polyTweak1";
+	rename -uid "CA2C6D6E-4102-FCA0-7DC8-2594A939E522";
+	setAttr ".uopa" yes;
+	setAttr -s 80 ".tk[0:79]" -type "float3"  7.1525574e-07 7.1898103e-07
+		 -1.4305115e-06 7.1525574e-07 7.1525574e-07 -1.3709068e-06 7.1525574e-07 7.1525574e-07
+		 -1.4901161e-06 7.1525574e-07 7.1898103e-07 -1.4454126e-06 7.1525574e-07 4.7683716e-07
+		 -1.6689301e-06 7.1525574e-07 4.7683716e-07 -2.3841858e-06 7.1525574e-07 9.5367432e-07
+		 -1.9073486e-06 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 9.5367432e-07
+		 -1.4305115e-06 7.1525574e-07 9.5367432e-07 -7.1525574e-07 7.1525574e-07 4.7683716e-07
+		 -9.5367432e-07 7.1525574e-07 4.7683716e-07 -1.4305115e-06 7.1525574e-07 9.5367432e-07
+		 -2.1457672e-06 7.1525574e-07 4.7683716e-07 -3.3378601e-06 7.1525574e-07 9.5367432e-07
+		 -1.6689301e-06 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 9.5367432e-07
+		 -2.3841858e-07 7.1525574e-07 9.5367432e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07
+		 -1.4305115e-06 7.1525574e-07 4.7683716e-07 -7.1525574e-07 7.1525574e-07 9.5367432e-07
+		 -1.6689301e-06 7.1525574e-07 4.7683716e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07
+		 -1.1920929e-06 7.1525574e-07 9.5367432e-07 -1.9073486e-06 7.1525574e-07 9.5367432e-07
+		 -4.7683716e-07 7.1525574e-07 9.5367432e-07 -2.1457672e-06 7.1525574e-07 9.5367432e-07
+		 -1.6689301e-06 7.1525574e-07 4.7683716e-07 -9.5367432e-07 7.1525574e-07 4.7683716e-07
+		 -4.7683716e-07 7.1525574e-07 9.5367432e-07 -1.1920929e-06 7.1525574e-07 4.7683716e-07
+		 -1.6689301e-06 7.1525574e-07 4.7683716e-07 -3.5762787e-06 7.1525574e-07 4.7683716e-07
+		 -2.3841858e-07 7.1525574e-07 9.5367432e-07 -4.7683716e-07 7.1525574e-07 9.5367432e-07
+		 -1.1920929e-06 7.1525574e-07 9.5367432e-07 -4.7683716e-07 7.1525574e-07 9.5367432e-07
+		 -9.5367432e-07 7.1525574e-07 4.7683716e-07 -1.9073486e-06 0 4.7683716e-07 0 0 0 0
+		 0 1.049071789 6.7371875e-06 0 1.04907167 6.2528998e-06 0 1.049071789 7.21775e-06
+		 0 1.049071789 6.0144812e-06 -0.001266357 -1.035208941 6.87740326 0.0012679271 -1.035208941
+		 6.8774004 0 2.036197424 7.21926641 0 2.036197424 7.21926641 1.4359884e-07 -1.05802393
+		 -1.22667134 1.4359861e-07 -1.05802393 -1.22666943 0 2.48723555 -1.2793349 3.7252903e-09
+		 2.050327778 -1.2793349 4.4408921e-16 1.098448992 0.68392849 4.4408921e-16 1.098448634
+		 0.68392897 0 1.24463868 1.93833113 0 1.24463832 1.93833256 0 1.48202252 -4.7311187e-07
+		 0 1.48202252 4.73991537 0.0012653633 1.78928566 8.29912949 -0.0012689152 1.78928638
+		 8.29913235 0.0012664342 0.37810513 7.69171476 -0.0012678276 0.37810519 7.69171715
+		 0.0012673025 -0.38545176 7.23404121 -0.0012670011 -0.38545173 7.2340436 0.0012677558
+		 -0.53567129 6.95908117 -0.0012664919 -0.5356701 6.95908356 1.8237115e-07 -0.55351847
+		 -1.32530439 1.8237093e-07 -0.55351847 -1.32530439 2.7578895e-07 -0.40386197 -1.57819557
+		 2.7578895e-07 -0.40386197 -1.57819557 4.2026014e-07 0.35362434 -2.028825045 4.2026014e-07
+		 0.35362437 -2.028824091 6.2019234e-07 1.76040304 -2.66298246 6.2019302e-07 1.76040304
+		 -2.66298246 0 1.48189378 -1.5390929 0 1.48189378 -1.53909349 0 1.24454999 -0.56997323
+		 0 1.24454904 -0.56997514 0 1.098403335 5.107373e-06 0 1.098403454 6.5676868e-06;
+createNode deleteComponent -n "deleteComponent1";
+	rename -uid "3A11C6B3-4160-2F9D-C957-86BDF04D0D74";
+	setAttr ".dc" -type "componentList" 1 "f[21]";
+createNode deleteComponent -n "deleteComponent2";
+	rename -uid "E99961A1-46AA-ED1A-4B8F-46AC61F6F919";
+	setAttr ".dc" -type "componentList" 1 "f[20]";
+createNode polyNormal -n "polyNormal1";
+	rename -uid "148B5DD9-4563-207C-BBA7-958A7B919118";
+	setAttr ".ics" -type "componentList" 1 "f[2]";
+	setAttr ".unm" no;
+createNode polyExtrudeEdge -n "polyExtrudeEdge1";
+	rename -uid "4B939C5A-4569-15F8-3B85-E999114AAEAE";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 18 "e[3]" "e[7]" "e[11]" "e[13]" "e[15]" "e[17]" "e[19]" "e[21]" "e[23]" "e[25]" "e[27]" "e[29]" "e[31]" "e[33]" "e[35]" "e[37]" "e[39]" "e[41]";
+	setAttr ".ix" -type "matrix" 0 0 1 0 0 0.65302066909091216 0 0 -0.32808181484555066 0 0 0
+		 1.8454679588568168 -0.01360576318813056 -0.90082331493830647 1;
+	setAttr ".ws" yes;
+	setAttr ".t" -type "double3" 0 0 -0.23165326512903439 ;
+	setAttr ".pvt" -type "float3" 1.8484401 1.8440995 -3.1752548 ;
+	setAttr ".rs" 57019;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" 0.8609134639388728 -0.12149317213482662 -2.9436022837493416 ;
+	setAttr ".cbx" -type "double3" 2.8359665305970245 3.809692323452138 -2.9436015684936043 ;
+createNode polySewEdge -n "polySewEdge1";
+	rename -uid "9F386D56-4708-0C5F-5C7A-2495D56CC70D";
+	setAttr ".ics" -type "componentList" 23 "e[1]" "e[3]" "e[6:45]" "e[47]" "e[50:51]" "e[58:60]" "e[62]" "e[65:69]" "e[71]" "e[73:74]" "e[76:79]" "e[81:86]" "e[88]" "e[91]" "e[93]" "e[96]" "e[98]" "e[103:126]" "e[128:131]" "e[133:136]" "e[138]" "e[141:143]" "e[145:177]";
+	setAttr ".ix" -type "matrix" 0 0 1 0 0 0.65302066909091216 0 0 -0.32808181484555066 0 0 0
+		 1.8454679588568168 -0.01360576318813056 -0.90082331493830647 1;
+	setAttr ".ws" yes;
+	setAttr ".t" 1;
+createNode polyTweak -n "polyTweak2";
+	rename -uid "B0C90B81-414B-F178-37FB-1D9FB88C6484";
+	setAttr ".uopa" yes;
+	setAttr -s 42 ".tk";
+	setAttr ".tk[2]" -type "float3" 5.9604645e-08 -1.8253921e-07 -5.9604389e-08 ;
+	setAttr ".tk[20]" -type "float3" 2.9802322e-08 -1.8253922e-07 -5.9604645e-08 ;
+	setAttr ".tk[80]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[81]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[82]" -type "float3" 0.077358156 0 0 ;
+	setAttr ".tk[83]" -type "float3" 0.077358156 0 2.2737368e-13 ;
+	setAttr ".tk[84]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[85]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[86]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[87]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[88]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[89]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[90]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[91]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[92]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[93]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[94]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[95]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[96]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[97]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[98]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[99]" -type "float3" 0.077358112 0 0 ;
+	setAttr ".tk[120]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[121]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[122]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[123]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[124]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[125]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[126]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[127]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[128]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[129]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[130]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[131]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[132]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[133]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[134]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[135]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[136]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[137]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[138]" -type "float3" -4.7683716e-07 0 0 ;
+	setAttr ".tk[139]" -type "float3" -4.7683716e-07 0 0 ;
 select -ne :time1;
 	setAttr ".o" 120;
 	setAttr ".unw" 120;
@@ -8631,16 +8486,14 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
-select -ne :lightList1;
-	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 7 ".dsm";
+	setAttr -s 5 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 7 ".gn";
+	setAttr -s 6 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -8649,8 +8502,6 @@ select -ne :defaultRenderGlobals;
 	setAttr ".dss" -type "string" "standardSurface1";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
-select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -8663,20 +8514,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "groupParts1.og" "polySurfaceShape10.i";
-connectAttr "groupId3.id" "polySurfaceShape10.iog.og[0].gid";
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.mwc" "polySurfaceShape10.iog.og[0].gco"
-		;
-connectAttr "groupParts3.og" "polySurfaceShape12.i";
-connectAttr "groupId5.id" "polySurfaceShape12.iog.og[0].gid";
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.mwc" "polySurfaceShape12.iog.og[0].gco"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId40.id" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.iog.og[1].gid"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.mwc" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.iog.og[1].gco"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId41.id" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.ciog.cog[1].cgid"
-		;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polyBevel16.out" "Challenge2_TileFloor_Cass_Jensen:pCubeShape2.i"
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polyBevel17.out" "Challenge2_TileFloor_Cass_Jensen:pCubeShape3.i"
@@ -8793,14 +8632,6 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId37.id" "Challenge2_TileFloo
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:lambert4SG.mwc" "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape6.iog.og[0].gco"
 		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:polyBoolean1.out" "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.i"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId40.id" "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.iog.og[0].gid"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId38.id" "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.iog.og[1].gid"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId42.id" "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.ciog.cog[0].cgid"
-		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupParts18.og" "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape30.i"
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId47.id" "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape30.iog.og[0].gid"
@@ -8841,7 +8672,7 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lam
 connectAttr "groupId2.id" "polySurfaceShape9.iog.og[0].gid";
 connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.mwc" "polySurfaceShape9.iog.og[0].gco"
 		;
-connectAttr "polyExtrudeFace1.out" "polySurfaceShape14.i";
+connectAttr "polySewEdge1.out" "polySurfaceShape14.i";
 connectAttr "groupId6.id" "polySurfaceShape14.iog.og[0].gid";
 connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.mwc" "polySurfaceShape14.iog.og[0].gco"
 		;
@@ -9157,12 +8988,6 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:mat
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:Wall_Color.oc" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.ss"
 		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.iog.og[1]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.ciog.cog[1]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polySurface1Shape.iog.og[1]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape31.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
@@ -9173,15 +8998,7 @@ connectAttr "polySurfaceShape8.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2
 		 -na;
 connectAttr "polySurfaceShape9.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
 		 -na;
-connectAttr "polySurfaceShape10.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
-connectAttr "polySurfaceShape12.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
 connectAttr "polySurfaceShape14.iog.og[0]" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId40.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId41.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId44.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
 		 -na;
@@ -9194,10 +9011,6 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId50.msg" "Challenge2_TileFlo
 connectAttr "groupId1.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
 		 -na;
 connectAttr "groupId2.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
-		 -na;
-connectAttr "groupId3.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
-		 -na;
-connectAttr "groupId5.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
 		 -na;
 connectAttr "groupId6.msg" "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:lambert2SG.gn"
 		 -na;
@@ -9535,11 +9348,7 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId15.id" "Challenge2_TileFloo
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape28.o" "Challenge2_TileFloor_Cass_Jensen:polyUnite2.ip[0]"
 		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.o" "Challenge2_TileFloor_Cass_Jensen:polyUnite2.ip[1]"
-		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polySurfaceShape28.wm" "Challenge2_TileFloor_Cass_Jensen:polyUnite2.im[0]"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.wm" "Challenge2_TileFloor_Cass_Jensen:polyUnite2.im[1]"
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polyUnite2.out" "Challenge2_TileFloor_Cass_Jensen:groupParts15.ig"
 		;
@@ -9601,16 +9410,6 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:polyBevel3.out" "Challenge2_TileFl
 		;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:pCubeShape2.wm" "Challenge2_TileFloor_Cass_Jensen:polyBevel16.mp"
 		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.o" "Challenge2_TileFloor_Cass_Jensen:polyBoolean1.ip[1]"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.wm" "Challenge2_TileFloor_Cass_Jensen:polyBoolean1.im[1]"
-		;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:pCube2Shape.o" "polySeparate1.ip"
-		;
-connectAttr "polySeparate1.out[0]" "groupParts1.ig";
-connectAttr "groupId3.id" "groupParts1.gi";
-connectAttr "polySeparate1.out[2]" "groupParts3.ig";
-connectAttr "groupId5.id" "groupParts3.gi";
 connectAttr "Lab2WhiteboxBlocking_Cass_Jensen:groupParts17.og" "Lab2WhiteboxBlocking_Cass_Jensen:groupParts18.ig"
 		;
 connectAttr "Lab2WhiteboxBlocking_Cass_Jensen:groupId53.id" "Lab2WhiteboxBlocking_Cass_Jensen:groupParts18.gi"
@@ -10025,6 +9824,15 @@ connectAttr "polySurfaceShape15.o" "groupParts4.ig";
 connectAttr "groupId6.id" "groupParts4.gi";
 connectAttr "polyBevel1.out" "polyExtrudeFace1.ip";
 connectAttr "polySurfaceShape14.wm" "polyExtrudeFace1.mp";
+connectAttr "polyExtrudeFace1.out" "polyTweak1.ip";
+connectAttr "polyTweak1.out" "deleteComponent1.ig";
+connectAttr "deleteComponent1.og" "deleteComponent2.ig";
+connectAttr "deleteComponent2.og" "polyNormal1.ip";
+connectAttr "polyNormal1.out" "polyExtrudeEdge1.ip";
+connectAttr "polySurfaceShape14.wm" "polyExtrudeEdge1.mp";
+connectAttr "polyTweak2.out" "polySewEdge1.ip";
+connectAttr "polySurfaceShape14.wm" "polySewEdge1.mp";
+connectAttr "polyExtrudeEdge1.out" "polyTweak2.ip";
 connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:surfacematerial1SG.pa" ":renderPartition.st"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:Lab2WhiteboxCorner_Cass_Jensen:surfacematerial2SG.pa" ":renderPartition.st"
@@ -10130,10 +9938,6 @@ connectAttr "Lab2WhiteboxBlocking_Cass_Jensen:lamp.msg" ":defaultShaderList1.s"
 connectAttr "Challenge2_TileFloor_Cass_Jensen:bump3d1.msg" ":defaultRenderUtilityList1.u"
 		 -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:directionalLightShape1.ltd" ":lightList1.l"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:directionalLightShape2.ltd" ":lightList1.l"
-		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:rock1.msg" ":defaultTextureList1.tx"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:pCubeShape25.iog.og[0]" ":initialShadingGroup.dsm"
@@ -10143,10 +9947,6 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:pCubeShape25.ciog.cog[0]" ":initia
 connectAttr "Challenge2_TileFloor_Cass_Jensen:pCubeShape26.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:pCubeShape26.ciog.cog[0]" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.iog.og[1]" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:combined_open_hallwayShape.ciog.cog[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:polySurface1Shape.iog.og[2]" ":initialShadingGroup.dsm"
 		 -na;
@@ -10158,14 +9958,8 @@ connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId24.msg" ":initialShadingGro
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId25.msg" ":initialShadingGroup.gn"
 		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId38.msg" ":initialShadingGroup.gn"
-		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId45.msg" ":initialShadingGroup.gn"
 		 -na;
 connectAttr "Challenge2_TileFloor_Cass_Jensen:groupId51.msg" ":initialShadingGroup.gn"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:directionalLight1.iog" ":defaultLightSet.dsm"
-		 -na;
-connectAttr "Challenge2_TileFloor_Cass_Jensen:directionalLight2.iog" ":defaultLightSet.dsm"
 		 -na;
 // End of Lab 3-Creating Detailed Assets 1-Cass Jensen.ma
